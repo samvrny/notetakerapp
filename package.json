@@ -1,0 +1,22 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "This app was built to be able to write notes and save them to a server with Express.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samvrny/notetakerapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samvrny/notetakerapp/issues"
+  },
+  "homepage": "https://github.com/samvrny/notetakerapp#readme"
+}
