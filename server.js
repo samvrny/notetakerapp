@@ -15,7 +15,7 @@ function createNewNote(body, notesArray) {
     notesArray.push(newNote);
     fs.writeFileSync(
         path.join(__dirname, './db/db.json'),
-        JSON.stringify({notes: notesArray}, null) //see if I can remove comma at end of null.
+        JSON.stringify({notes: notesArray}, null) //NOTE: If something breaks, there used to be a comma here at the end of null ( null,)
     );
     return newNote;
 }
