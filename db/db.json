@@ -1,1 +1,29 @@
-{"notes":[{"title":"Make Cookies","text":"I am so hungry. I would like to eat some cookies","id":"0"}]}
+{
+  "notes": [
+    {
+      "title": "Make Cookies",
+      "text": "I am so hungry. I would like to eat some cookies",
+      "id": "0"
+    },
+    {
+      "title": "Meatballs",
+      "text": "I love to eat pasta with meatballs. I should really make some at some point here! MMM Deliciouso!",
+      "id": "1"
+    },
+    {
+      "title": "Sushi! ",
+      "text": "Who doesn't love sushi? Boy oh boy I would really like to eat some!",
+      "id": "2"
+    },
+    {
+      "title": "Radishes",
+      "text": "Put 'em on a salad if you so desire. Or till 'em in for a health arreated field!",
+      "id": "3"
+    },
+    {
+      "title": "Lettuce",
+      "text": "Lettuce make ourselves a delicious salad. Hold the radishes!",
+      "id": "4"
+    }
+  ]
+}
