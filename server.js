@@ -39,34 +39,12 @@ app.post('/api/notes', (req, res) => {
     res.json(newNote);
 });
 
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
 app.listen(PORT, () => {
     console.log(`API server now on PORT ${PORT}!`);
 });
 
-
-
-//EXAMPLE FOR OFFICE HOURS BELOW
-
-function apple (arg1, arg2) {
-    console.log(arg1, arg2);
-}
-
-function appleEx() {
-    let blue = 'blue';
-    let yellow = 'yellow';
-apple(blue, yellow);
-}
-
-function appleExTwo() {
-    let red = 'red';
-    let orange = 'orange';
-    apple(red, orange);
-}
-
-appleEx();
-appleExTwo();
-
-//Basically, if set up a function with two parameters (apple in this instance) 
-//Then whenever I call that function with arguments will they always get set into
-//the value or the parameters? Basically are the parameters just waiting to accept 
-//data sent (arguments?)
+//ARE WE  going to be deploying with heroku???
