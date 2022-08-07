@@ -30,7 +30,7 @@ function deleteNoteById(id, notes) {
     for(i = 0; i < notes.length; i++) {
         notes[i].id = "" + i + "";
     }
-    console.table(notes);
+    //console.table(notes);  This note was left here for development purposes
     fs.writeFileSync(
         path.join(__dirname, './db/db.json'),
         JSON.stringify({notes: notes}, null, 2)
