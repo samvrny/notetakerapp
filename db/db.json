@@ -1,24 +1,19 @@
 {
   "notes": [
     {
-      "title": "Bake A Cake",
-      "text": "It's your Birthday",
-      "id": 0
-    },
-    {
       "title": "Make Lemonade",
       "text": "When life gives you lemons.",
-      "id": 1
+      "id": "0"
     },
     {
-      "title": "Fold Laundry",
-      "text": "Sure the chair is there, but come on.",
-      "id": 2
+      "title": "Lasagna",
+      "text": "Bake one.",
+      "id": "1"
     },
     {
-      "title": "Get Groceries",
-      "text": "For the cake, and the lasagna",
-      "id": "3"
+      "title": "Write Some Notes",
+      "text": "Might as well, got an app for it!",
+      "id": "2"
     }
   ]
 }

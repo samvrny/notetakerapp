@@ -28,7 +28,7 @@ function deleteNoteById(id, notes) {
     console.log(thisId);
     notes.splice(thisId, 1)
     for(i = 0; i < notes.length; i++) {
-        notes[i].id = i;
+        notes[i].id = "" + i + "";
     }
     console.table(notes);
     fs.writeFileSync(
