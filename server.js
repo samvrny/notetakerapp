@@ -22,6 +22,22 @@ function createNewNote(body, notesArray) {
     return newNote;
 }
 
+//this function deletes a note and rewrites the db.json file so each object within has the correct id
+function deleteNoteById(id, notes) {
+    const thisId = id;
+    console.log(thisId);
+    notes.splice(thisId, 1)
+    for(i = 0; i < notes.length; i++) {
+        notes[i].id = i;
+    }
+    console.table(notes);
+    fs.writeFileSync(
+        path.join(__dirname, './db/db.json'),
+        JSON.stringify({notes: notes}, null, 2)
+    );
+    return notes;
+}
+
 //below are the get, post, and delete routes
 app.get('/api/notes', (req, res) => {
     let results = notes;
@@ -46,10 +62,12 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
+app.delete('/api/notes/:id', (req, res) => {
+    const result = deleteNoteById(req.params.id, notes);
+    res.send(result);
+});
+
 //listening to the port
 app.listen(PORT, () => {
     console.log(`API server now on PORT ${PORT}!`);
 });
-
-//ARE WE  going to be deploying with heroku???
-// I am adding this note
