@@ -12,6 +12,8 @@ Run npm start from the command line in the root directory of this project to sta
 You can also veiw the deployed application here:
 [Note Taker](https://protected-mesa-86289.herokuapp.com/)
 
+![](./images/notetakerss.png)
+
 ## Built With
 * Express.js
 * node.js
